@@ -1,0 +1,225 @@
+* {
+  font-family: "SF UI Text", -apple-system-tall-body, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+}
+body {
+  margin: 1.5rem;
+  color: #212529;
+}
+h1 {
+  font-family: 'Lora';
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 48px;
+  margin: 1rem 0;
+  padding-top: 98px;
+}
+p {
+  max-width: 640px;
+  margin-bottom: 96px;
+  margin-top: 0;
+}
+p, p i {
+  font-weight: 300;
+  line-height: 2rem;
+  font-size: 22px;
+  /* font-family: "Khula"; */
+}
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fa5252;
+  font-weight: 300;
+  line-height: 28px;
+}
+a:hover {
+  text-decoration: underline;
+}
+h3 {
+  margin-bottom: .5rem;
+  text-transform: uppercase;
+  line-height: 1rem;
+  font-size: 14px;
+  font-weight: 500;
+}
+.container {
+  max-width: 84%;
+  margin: calc(50vh - 280px) auto 0 auto;
+  position: relative;
+  z-index: 4;
+}
+.selfie {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  vertical-align: middle;
+  max-width: 560px;
+  height: auto;
+}
+.circle-container-container {
+  overflow: hidden;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100vw;
+}
+.circle-container {
+  top: -15%;
+  padding-top: 0;
+  width: 100vw;
+  height: 100vw;
+  max-width: 120vh;
+  max-height: 120vh;
+  right: -40%;
+  position: absolute;
+}
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #FFE3E3;
+}
+@media screen and (max-width: 1480px) {
+  h1 {
+    padding-top: 58px;
+  }
+  .selfie {
+    max-width: 480px;
+  }
+}
+@media screen and (max-width: 1370px) {
+  p {
+    max-width: 50%;
+  }
+  .circle-container {
+    right: -50%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .container {
+    max-width: 90%;
+  }
+  h1 {
+    padding-top: 6%;
+  }
+  .selfie {
+    max-width: 44%;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .circle-container {
+    right: -60%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .container {
+      max-width: none;
+      margin: 0 auto;
+  }
+  .selfie {
+    position: relative;
+    max-width: 480px;
+  }
+  .text-container {
+    margin-bottom: 64px;
+  }
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: .5rem;
+  }
+  p {
+    margin-bottom: 2rem;
+    max-width: none;
+  }
+  p, p i {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  a {
+    font-size: 1rem;
+  }
+  .circle-container {
+    bottom: 10%;
+    top: auto;
+  }
+  .selfie {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .circle-container {
+    bottom: 0%;
+  }
+}
+
+.selfie.animated {
+  animation-delay: .5s;
+}
+.text-container.animated {
+  animation-delay: .5s;
+  animation-duration: 2s;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+
+@keyframes pulse {
+  from {
+    opacity: 0;
+    transform: scale3d(.9, .9, .9);
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale3d(.9, .9, .9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(10%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
