@@ -4,32 +4,32 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Aubrey Marks · Event Manager</title>
   <link rel="icon" href="favicon.png" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
-  <!-- Start of Async Drift Code -->
+  <!-- Start of Async Drift Code 
 	<script>
-	!function() {
-	  var t;
-	  if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
-	  t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
-	  t.factory = function(e) {
-	    return function() {
-	      var n;
-	      return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
-	    };
-	  }, t.methods.forEach(function(e) {
-	    t[e] = t.factory(e);
-	  }), t.load = function(t) {
-	    var e, n, o, i;
-	    e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
-	    o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
-	    n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
-	  });
-	}();
-	drift.SNIPPET_VERSION = '0.3.1';
-	drift.load('32ssv9zm9r9n');
+  	!function() {
+  	  var t;
+  	  if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
+  	  t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+  	  t.factory = function(e) {
+  	    return function() {
+  	      var n;
+  	      return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+  	    };
+  	  }, t.methods.forEach(function(e) {
+  	    t[e] = t.factory(e);
+  	  }), t.load = function(t) {
+  	    var e, n, o, i;
+  	    e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+  	    o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
+  	    n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+  	  });
+  	}();
+  	drift.SNIPPET_VERSION = '0.3.1';
+  	drift.load('32ssv9zm9r9n');
 	</script>
-	<!-- End of Async Drift Code -->
+	End of Async Drift Code -->
 </head>
 <body>
   <style>
@@ -37,250 +37,336 @@
 	  font-family: "SF UI Text", -apple-system-tall-body, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
 	}
 	body {
-	  margin: 1.5rem;
-	  color: #212529;
 	  -webkit-font-smoothing: antialiased;
 	  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    color: #212529;
 	}
 	h1 {
-	  font-family: 'Lora';
+	  font-family: 'Lora', serif;
 	  font-weight: normal;
 	  font-size: 40px;
-	  line-height: 48px;
-	  margin: 1rem 0;
-	  padding-top: 55px;
+	  line-height: 56px;
+    margin: 0;
 	}
-	p {
-	  max-width: 640px;
-	  margin-top: 0;
-	}
-  p:last-child {
-    margin-bottom: 56px;
+  h2 {
+    font-family: 'Lora', serif;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 56px;
+    margin-bottom: 1rem;
   }
-	p, p i {
-	  font-weight: 300;
-	  line-height: 2rem;
-	  font-size: 20px;
-	}
-	a {
-	  text-decoration: none;
-	  font-size: 20px;
-	  color: #fa5252;
-	  font-weight: 300;
-	  line-height: 28px;
-	}
-	a:hover {
-	  text-decoration: underline;
-	}
-	h3 {
-	  margin-bottom: .5rem;
-	  text-transform: uppercase;
-	  line-height: 1rem;
-	  font-size: 14px;
-	  font-weight: 600;
-	}
-	.container {
-	  max-width: 84%;
-	  margin: calc(50vh - 280px) auto 0 auto;
-	  position: relative;
-	  z-index: 4;
-	}
-	.selfie {
-	  position: absolute;
-	  top: 0;
-	  right: 0;
-	  z-index: 3;
-	  vertical-align: middle;
+  h3 {
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+    line-height: 1rem;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+  }
+  h4 {
+    font-family: 'Lora', serif;
+    margin: 0 0 2rem 0;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
+    color: #228AE6;
+  }
+	p {
+    font-size: 1rem;
+    line-height: 30px;
 	  max-width: 560px;
-	  height: auto;
+	  margin: 0 0 1.5rem 0;
+    color: #6D6D6D;
 	}
-	.circle-container-container {
-	  overflow: hidden;
-	  height: 100vh;
-	  position: absolute;
-	  right: 0;
-	  top: 0;
-	  width: 100vw;
-	}
-	.circle-container {
-	  top: -15%;
-	  padding-top: 0;
-	  width: 100vw;
-	  height: 100vw;
-	  max-width: 120vh;
-	  max-height: 120vh;
-	  right: -40%;
-	  position: absolute;
-	}
-	.circle {
-	  position: absolute;
-	  top: 0;
-	  left: 0;
-	  width: 100%;
-	  height: 100%;
-	  border-radius: 50%;
-	  background: #FFE3E3;
-	}
-	@media screen and (max-width: 1480px) {
-	  h1 {
-	    padding-top: 58px;
-	  }
-	  .selfie {
-	    max-width: 480px;
-	  }
-	}
-	@media screen and (max-width: 1370px) {
-	  p {
-	    max-width: 50%;
-	  }
-	  .circle-container {
-	    right: -50%;
-	  }
-	}
-	@media screen and (max-width: 1280px) {
-	  .container {
-	    max-width: 90%;
-	  }
-	  h1 {
-	    padding-top: 6%;
-	  }
-	  .selfie {
-	    max-width: 44%;
-	  }
-	}
-	@media screen and (max-width: 1250px) {
-	  .circle-container {
-	    right: -60%;
-	  }
-	}
-	@media screen and (max-width: 1080px) {
-	  .container {
-	      max-width: none;
-	      margin: 0 auto;
-	  }
-	  .selfie {
-	    position: relative;
-	    max-width: 480px;
-	  }
-	  .text-container {
-	    margin-bottom: 64px;
-	  }
-	}
-	@media screen and (max-width: 600px) {
-	  h1 {
-	    font-size: 32px;
-	    line-height: 40px;
-	    margin-bottom: .5rem;
-	  }
-	  p {
-	    margin-bottom: 2rem;
-	    max-width: none;
-	  }
-	  p, p i {
-	    font-size: 14px;
-	    line-height: 24px;
-	  }
-	  a {
-	    font-size: 1rem;
-	  }
-	  .circle-container {
-	    bottom: 10%;
-	    top: auto;
-	  }
-	  .selfie {
-	    width: 100%;
-	  }
-	}
-	@media screen and (max-width: 320px) {
-	  .circle-container {
-	    bottom: 0%;
-	  }
-	}
+  a {
+    text-decoration: none;
+    color: #228AE6;
+    font-size: 1rem;
+    line-height: 28px;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .container {
+    max-width: 1264px;
+    padding: 0 4rem;
+    margin: 0 auto;
+  }
+  header {
+    margin: 1rem 0;
+    display: block;
+    height: 32px;
+  }
+  header a {
+    float: right;
+    margin-left: 2rem;
+  }
+  #heading {
+    margin: 8rem 0 12rem 0;
+  }
+  #heading .flex {
+    align-items: center;
+  }
+  #intro {
+    display: inline-block;
 
-	.selfie.animated {
-	  animation-delay: .5s;
-	}
-	.text-container.animated {
-	  animation-delay: .5s;
-	  animation-duration: 2s;
-	}
-
-	.animated {
-	  animation-duration: 1s;
-	  animation-fill-mode: both;
-	}
-
-	@keyframes fadeIn {
-	  from {
-	    opacity: 0;
-	  }
-
-	  to {
-	    opacity: 1;
-	  }
-	}
-
-	.fadeIn {
-	  animation-name: fadeIn;
-	}
-
-
-	@keyframes pulse {
-	  from {
-	    opacity: 0;
-	    transform: scale3d(.95, .95, .95);
-	  }
-
-	  50% {
-	    opacity: 0;
-	    transform: scale3d(.95, .95, .95);
-	  }
-
-	  to {
-	    opacity: 1;
-	    transform: scale3d(1, 1, 1);
-	  }
-	}
-
-	.pulse {
-	  animation-name: pulse;
-	}
-
-	@keyframes fadeInUp {
-	  from {
-	    opacity: 0;
-	    transform: translate3d(10%, 0, 0);
-	  }
-
-	  to {
-	    opacity: 1;
-	    transform: none;
-	  }
-	}
-
-	.fadeInUp {
-	  animation-name: fadeInUp;
-	}
-
+  }
+  #intro p {
+    margin: 0 2.5rem 2.5rem 0;
+  }
+  img#selfie {
+    max-width: 600px;
+    height: auto;
+    width: 50%;
+    float: right;
+    border-radius: 12px;
+    box-shadow: 0 2px 30px rgba(91, 105, 118, .5), 32px 32px 4px #EDF5FF;
+  }
+  #case-studies {
+    background: #EDF5FF;
+    padding: 7rem 0;
+    margin: 18rem 0 14rem;
+  }
+  .preview {
+    box-shadow: 0 2px 30px rgba(91, 105, 118, .5);
+    max-width: 390px;
+    height: auto;
+    width: 100%;
+    border-radius: 12px;
+  }
+  .preview-container {
+    display: inline-block;
+    max-width: 390px;
+    width: calc(50% - 1rem);
+  }
+  .preview-container:nth-of-type(2) {
+    margin: 0 1rem;
+    position: relative;
+  }
+  .preview-container:nth-of-type(2) div {
+    position: absolute;
+    left: 1rem;
+    bottom: 0;
+    transform: translateY(50%);
+  }
+  .preview-container:nth-of-type(2) img:first-of-type {
+    margin: 0 0 1rem 0;
+  }
+  .text-container {
+    max-width: 324px;
+    display: inline-block;
+    order: 1;
+  }
+  #case-studies .flex {
+    align-items: center;
+  }
+  #case-studies .flex .flex {
+    order: 1;
+    max-width: calc(100% - 356px);
+    width: 100%;
+    justify-content: flex-start;
+  }
+  #instagram {
+    margin: 8rem 0;
+  }
+  .instagram-media {
+    display: inline-block;
+    margin: .5rem;
+    order: 1;
+    flex-grow: 1;
+    border-radius: 6px;
+    width: 142px;
+    height: 142px;
+    max-width: 142px;
+  }
+  #instagram p {
+    max-width: 424px;
+  }
+  .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+  #instagram .flex {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .container {
+    border-top: 1px solid #D8D8D8;
+    padding: 2rem 0;
+    color: #6D6D6D;
+  }
+  footer a {
+    color: #6D6D6D;
+  }
+  @media screen and (max-width: 1124px) {
+    #heading {
+      margin: 6rem 0 6rem 0;
+    }
+    #case-studies {
+      padding: 3rem 0;
+      margin: 12rem 0 12rem;
+    }
+ 	}
+  @media screen and (max-width: 960px) {
+    img#selfie {
+      float: inherit;
+      margin-top: 4rem;
+      width: 100%;
+      max-width: 400px;
+    }
+    #heading .flex {
+      display: block;
+    }
+    #case-studies .container > .flex {
+      flex-direction: column;
+    }
+    #case-studies .flex .flex {
+      order: 2;
+      max-width: 100%;
+      display: block;
+      margin-top: 2rem;
+    }
+    #case-studies .preview-container:first-of-type {
+      width: 100%;
+      display: block;
+    }
+    #case-studies .preview-container:nth-of-type(2) {
+      display: block;
+      width: 100%;
+      margin: 0;
+    }
+    #case-studies .preview-container:nth-of-type(2) > div {
+      position: initial;
+      transform: none;
+    }
+    #case-studies .preview-container:nth-of-type(2) img:first-of-type {
+      margin: 2rem 0;
+    }
+    #case-studies .preview-container:nth-of-type(2) img:first-of-type {
+      max-width: 300px;
+    }
+    #case-studies img.preview {
+      max-width: 300px;
+      height: auto;
+      width: 100%;
+    }
+    .text-container {
+      width: 100%;
+      max-width: 100%;
+      display: block;
+    }
+ 	}
+  @media screen and (max-width: 680px) {
+    .container {
+      padding: 0 2rem;
+    }
+    #heading {
+      margin: 3rem 0 6rem 0;
+    }
+  }
+  @media screen and (max-width: 414px) {
+    h1 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+    h4 {
+      font-size: 18px;
+    }
+    #intro p {
+      font-size: 14px;
+      line-height: 24px;
+      margin: 2rem 0;
+    }
+    img#selfie {
+          box-shadow: 0 2px 10px rgba(91, 105, 118, .5), 8px 8px 4px #EDF5FF;
+    }
+    .instagram-media {
+      width: calc(50% - 1rem);
+    }
+    #case-studies {
+      margin: 0;
+    }
+    #case-studies img.preview {
+      box-shadow: 0 2px 10px rgba(91, 105, 118, .5);
+    }
+  }
   </style>
-  <div class="container">
-    <div class="text-container animated fadeIn">
-      <div>
-        <h1>Aubrey Marks</h1>
-        <p>I am an events professional with experience in event management and field marketing. I currently work at Salesforce on the Hospitality and Events team. Every day, I curate unique and memorable experiences that promote Salesforce's Ohana culture and values by activating our event spaces and real estate at Salesforce HQ.</p>
+    <header>
+      <div class="container">
+        <br/>
       </div>
-      <div>
-        <h3>Contact</h3>
-        <a href="mailto:aubreysmarks@gmail.com">Email</a><br>
-        <a href="Aubrey Marks - Resume.pdf" target="_blank">Resume</a><br>
+    </header>
+    <section id="heading">
+      <div class="container">
+        <div class="flex">
+          <div id="intro">
+            <div>
+              <h1>Aubrey Marks</h1>
+              <h4>Events Professional</h4>
+              <p>I am an events professional with experience in event management and field marketing. I currently work at Salesforce on the Hospitality and Events team. Every day, I curate unique and memorable experiences that promote Salesforce’s Ohana culture and values by activating our event spaces and real estate at Salesforce HQ.</p>
+            </div>
+            <div>
+              <h3>Contact</h3>
+              <a href="mailto:aubreysmarks@gmail.com">Email</a><br>
+              <a href="Aubrey Marks - Resume.pdf" target="_blank">Resume</a><br>
+              <a href="https://www.linkedin.com/in/aubreysmarks" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+          <img id="selfie" class="animated fadeInUp" src="selfie.png">
+        </div>
+      </div>
+    </section>
+    <section id="case-studies">
+      <div class="container">
+        <div class="flex">
+          <div class="flex">
+            <div class="preview-container">
+              <img class="preview" src="preview_tower@2x.png" />
+            </div>
+            <div class="preview-container">
+              <div>
+                <img class="preview" src="preview_dreamforce@2x.png" />
+                <img class="preview" src="preview_red@2x.png" />
+              </div>
+            </div>
+          </div>
+          <div class="text-container">
+            <h2>Events</h2>
+            <p>I have planned and coordinate events and campus-wide activations for the Salesforce Tower first-day-of-business openings, Dreamforce, and TrailheaDX.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="instagram">
+      <div class="container">
+        <h2>Instagram</h2>
+        <p>On any given day, you might find me cooking, reading, or exploring the city of San Francisco.</p>
+        <div class="flex">
+          <img class="instagram-media" src="https://www.instagram.com/p/BeghqD-gw7F/media/?size=t"/ >
+          <img class="instagram-media" src="https://www.instagram.com/p/BecJIWhDG0n/media/?size=t" />
+          <img class="instagram-media" src="https://www.instagram.com/p/BeUTOTWjcBy/media/?size=t" />
+          <img class="instagram-media" src="https://www.instagram.com/p/BeOs-4GDpFy/media/?size=t" />
+
+          <img class="instagram-media" src="https://www.instagram.com/p/BeLhmDGjEk2/media/?size=t"/ >
+          <img class="instagram-media" src="https://www.instagram.com/p/BeHZkFOj-IG/media/?size=t" />
+          <img class="instagram-media" src="https://www.instagram.com/p/BeCLrvLj2rH/media/?size=t" />
+          <img class="instagram-media" src="https://www.instagram.com/p/Bd4GOqfj28Z/media/?size=t" />
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <a href="mailto:aubreysmarks@gmail.com">Email</a>   ·
+        <a href="Aubrey Marks - Resume.pdf" target="_blank">Resume</a>   ·
         <a href="https://www.linkedin.com/in/aubreysmarks" target="_blank">LinkedIn</a>
+        <br/><span>Copyright 2018 Aubrey Marks</span>
       </div>
-    </div>
-    <img class="selfie animated fadeInUp" src="selfie.png">
-  </div>
-  <div class="circle-container-container">
-    <div class="circle-container">
-      <div class="circle animated pulse"></div>
-    </div>
-  </div>
+    </footer>
 </body>
